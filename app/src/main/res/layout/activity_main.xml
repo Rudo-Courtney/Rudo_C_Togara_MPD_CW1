@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+
+    <ViewFlipper
+        android:layout_weight="0.2"
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <include layout="@layout/homescreen"
+            android:id="@+id/homePage"/>
+
+        <include layout="@layout/date_view"
+            android:id="@+id/viewRoadwork"/>
+
+        <include layout="@layout/planner"
+            android:id="@+id/plannerInfo"/>
+
+        <include layout="@layout/content_main"
+            android:id="@+id/roadworksInfo"/>
+
+        <include layout="@layout/map"
+            android:id="@+id/map"/>
+
+        <include layout="@layout/homescreen"
+            android:id="@+id/clickBack"/>
+
+    </ViewFlipper>
+
+
+
+
+</LinearLayout>
+

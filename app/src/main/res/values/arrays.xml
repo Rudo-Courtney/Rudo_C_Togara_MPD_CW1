@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filterByOptions"> Select Option
+        <item> </item>
+        <item>Current Incidents</item>
+        <item>Planned Roadworks</item>
+        <item>All Roadworks</item>
+    </string-array>
+</resources>

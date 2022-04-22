@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:padding="50sp"
+            android:text="@string/strings"
+            android:textColor="@color/DodgerBlue"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:textSize="30sp">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            style="@style/LinearLayoutStructure"
+            android:orientation="vertical"
+            android:layout_height="150sp"
+            >
+
+            <Button
+                android:id="@+id/openRoadWorks"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DodgerBlue"
+                android:textSize="20sp"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:icon="@drawable/ic_explore"
+                android:drawableStart="@drawable/ic_explore"
+                android:textColor="@color/White"
+                android:text="Explore"
+                android:onClick="showRoadworks"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="All RoadWorks"
+                android:textColor="@color/DarkGray"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutStructure"
+            android:orientation="vertical"
+            android:layout_height="150sp">
+
+            <Button
+                android:id="@+id/openPlanner"
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:backgroundTint="@color/DodgerBlue"
+                android:text="PLANNER"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:icon="@drawable/ic_calendar"
+                android:onClick="showPlanner"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+                android:text="Go To Planner"
+                android:textColor="@color/DarkGray"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp">
+        <Button
+            android:id="@+id/openByDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginLeft="100sp"
+            android:textColor="@color/White"
+            android:backgroundTint="@color/DodgerBlue"
+            android:text="View BY DATE"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@drawable/ic_date"
+            android:onClick="viewByDate"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/openMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginLeft="100sp"
+            android:textColor="@color/White"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@drawable/ic_map"
+            android:backgroundTint="@color/DodgerBlue"
+            android:text="View ON MAP"
+            android:onClick="showMap"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
